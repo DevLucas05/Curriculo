@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Currículo e Portfólio Online - Lucas Nascimento. Desenvolvedor apaixonado por criar experiências digitais.">
+    <title>Lucas Nascimento | Portfólio & Currículo</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Devicon for Tech Stack Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <a href="#home" class="logo">Lucas Nascimento</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#experience" class="nav-link">Experiência</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content fade-in">
+                <p class="greeting">Olá, eu sou</p>
+                <h1 class="name">Lucas Nascimento</h1>
+                <h2 class="title" id="typewriter">Desenvolvedor Web / Dev Back-end</h2>
+                <p class="bio">
+                    Estudante de Ciência da Computação focado em Python e Machine Learning. Tenho experiência com APIs e processamento de dados e busco minha primeira oportunidade profissional na área de IA.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> Ver Projetos</a>
+                    <!-- O href aponta para a pasta 'arquivos' e o download força o baixar -->
+                    <a href="assets/curriculo.pdf" class="btn btn-secondary" download="Curriculo-Lucas-Nascimento.pdf" target="_blank">
+                        <i class="fas fa-download"></i> Baixar CV
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/DevLucas05" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/lucas-nascimento-dev" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:lucasnascimento05.dev@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image fade-in delay-1">
+                <div class="image-wrapper">
+                    <!-- Substitua o src pela sua foto -->
+                    <img src="assets/Perfil 2.jpeg" alt="Sua Foto" id="profile-img">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll</span>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container section-header hidden">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="container about-content hidden">
+            <div class="about-text">
+                <p>
+                    Minha jornada em tecnologia começou antes da faculdade, com desenvolvimento web e tecnologias Front-End como HTML, CSS e JavaScript, mas logo me apaixonei pelo poder do Python e pela criação de inteligência por trás do código. Hoje, foco intensamente em Engenharia de Machine Learning e Ciência de Dados, estudando desde o pré-processamento até modelos preditivos com PyTorch. <p>
+                    Na prática, aplico esses conceitos desenvolvendo backends e pipelines de dados para um projeto SaaS com FastAPI e Docker. Busco minha primeira oportunidade na área de IA para atuar na intersecção entre Software e Data Science, criando modelos escaláveis e prontos para produção. Meu objetivo é resolver problemas reais e evoluir como Engenheiro de ML.    
+                </p>
+            </div>
+            <div class="about-stats">
+                <div class="blur-blob"></div>
+                <div class="stat-box">
+                    <h3>[2]+</h3>
+                    <p>Anos de Experiência</p>
+                </div>
+                <div class="stat-box">
+                    <h3>[3]+</h3>
+                    <p>Projetos Concluídos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-alt">
+        <div class="container section-header hidden">
+            <h2 class="section-title">Experiência</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">Minha jornada profissional até o momento</p>
+        </div>
+        <div class="container hidden">
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <p class="timeline-date">[Mar / 2026] — Presente</p>
+                    <h3>Estudante / Freelancer</h3>
+                    <h4>N/A</h4>
+                    <p>
+                        Atualmente estou no 7º semestre da faculdade em Ciência da Computação, e estudando pela Alura a carreira de Especialista em IA.<p>
+                        Porém, estou trabalhando em um projeto chamado Scriptura-AI, que ajuda a criação de estudos bíblicos utilizando inteligência artificial para criar estudos e apoios para os líderes de todas as idades.
+                    </p>
+                </div>
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <p class="timeline-date">[Jul / 2025] — [Set / 2025]</p>
+                    <h3>Freelancer</h3>
+                    <h4>N/A</h4>
+                    <p>
+                        Atuei como Engenheiro de Software Freelancer no desenvolvimento do Scriptura, um sistema SaaS completo para gestão de agendamentos. Minha principal responsabilidade foi arquitetar a solução do zero, utilizando Python e FastAPI para garantir alta performance e escalabilidade.
+
+                    </p>
+                    <p>
+                        O maior impacto do meu trabalho foi a criação de pipelines de dados inteligentes que analisam os padrões de uso da plataforma. Isso transformou dados brutos em insights estratégicos para a tomada de decisão, além de preparar toda a infraestrutura para futuras implementações de modelos de Machine Learning para previsão de demanda. Todo o ambiente foi containerizado com Docker, garantindo portabilidade e profissionalismo na entrega.
+                    </p>
+                </div>
+                <!-- Timeline Item 3 (Educação) -->
+                <div class="timeline-item">
+                    <p class="timeline-date">[02 / 2023] — [12 / 2026]</p>
+                    <h3>Graduação / Ciência da Computação</h3>
+                    <h4>Faculdades Metropolitanas Unidas - FMU</h4>
+                    <p>
+                        Durante o curso, tenho adquirido uma base sólida em algoritmos, estruturas de dados e engenharia de software. A grade curricular da FMU tem me permitido explorar tanto o desenvolvimento de sistemas (Web e Mobile) quanto a computação aplicada, com foco crescente em Inteligência Artificial e Ciência de Dados. A abordagem prática da faculdade estimula a resolução de problemas reais, preparando-me para o mercado de trabalho com visão crítica e técnica.<p>
+                        Tive participações em projetos acadêmicos voltados para a minha comunidade em que moro, para melhorar por exemplo a acessibilidade das pessoas mais pobres para acharem trabalhos / serviços. <p>
+                        Reconhecimento por manter coeficiente de rendimento (CR) elevado, figurando entre os 10% melhores alunos da turma durante os semestres de 2023 e 2024.    
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container section-header hidden">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="container skills-grid hidden">
+            <div class="skill-card">
+                <i class="fab fa-html5 skill-icon" style="color: #E34F26;"></i>
+                <h3>HTML5</h3>
+                <p>Estruturação semântica e acessível.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt skill-icon" style="color: #1572B6;"></i>
+                <h3>CSS3</h3>
+                <p>Estilização moderna e responsiva.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js skill-icon" style="color: #F7DF1E;"></i>
+                <h3>JavaScript</h3>
+                <p>Lógica, DOM e interatividade.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-react skill-icon" style="color: #61DAFB;"></i>
+                <h3>React</h3>
+                <p>Componentização e estado.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-git-alt skill-icon" style="color: #F05032;"></i>
+                <h3>Git / GitHub</h3>
+                <p>Versionamento de código.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database skill-icon" style="color: #5B9BD5;"></i>
+                <h3>Bancos de Dados</h3>
+                <p>SQL e NoSQL básicos.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python skill-icon" style="color: #3776AB;"></i>
+                <h3>Python</h3>
+                <p>Backend, scripts e automação.</p>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-fastapi-plain skill-icon" style="color: #009688;"></i>
+                <h3>FastAPI</h3>
+                <p>APIs de alta performance.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-docker skill-icon" style="color: #2496ED;"></i>
+                <h3>Docker</h3>
+                <p>Containerização e deploy.</p>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-pandas-plain skill-icon" style="color: #150458;"></i>
+                <h3>Pandas</h3>
+                <p>Manipulação e análise de dados.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-node-js skill-icon" style="color: #339933;"></i>
+                <h3>Node.js</h3>
+                <p>Runtime JavaScript server-side.</p>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-sqlite-plain skill-icon" style="color: #003B57;"></i>
+                <h3>SQLite</h3>
+                <p>Banco de dados leve e embutido.</p>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-postgresql-plain skill-icon" style="color: #4169E1;"></i>
+                <h3>PostgreSQL</h3>
+                <p>Banco de dados relacional robusto.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-linux skill-icon" style="color: #FCC624;"></i>
+                <h3>Linux</h3>
+                <p>Administração e terminal.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-users-cog skill-icon" style="color: #6DB33F;"></i>
+                <h3>Scrum</h3>
+                <p>Metodologia ágil e sprints.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-exchange-alt skill-icon" style="color: #FF6F00;"></i>
+                <h3>API Rest</h3>
+                <p>Arquitetura e integração de APIs.</p>
+            </div>
+            <!-- Adicione ou remova skill-cards conforme necessário -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-alt">
+        <div class="container section-header hidden">
+            <h2 class="section-title">Projetos em Destaque</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">Alguns dos meus trabalhos recentes</p>
+        </div>
+        <div class="container projects-grid hidden">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/Foto curriculo online.png" alt="Projeto 1">
+                    <div class="project-links-overlay">
+                        <a href="[Link do GitHub do Projeto]" target="_blank" title="Código Fonte"><i class="fab fa-github"></i></a>
+                        <a href="[Link do Projeto Online]" target="_blank" title="Ver Online"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Currículo Online</h3>
+                    <p class="project-desc">
+                        Um currículo online responsivo e moderno, desenvolvido com React e JavaScript. Este projeto é uma representação digital do meu perfil profissional, destacando minhas habilidades, experiências e projetos de forma interativa e visualmente atraente.
+                    </p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://placehold.co/600x400/1a2f4a/c49a6c?text=Projeto+2" alt="Projeto 2">
+                    <div class="project-links-overlay">
+                        <a href="[Link do GitHub do Projeto]" target="_blank" title="Código Fonte"><i class="fab fa-github"></i></a>
+                        <a href="[Link do Projeto Online]" target="_blank" title="Ver Online"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">[Nome do Projeto 2]</h3>
+                    <p class="project-desc">
+                        [Breve descrição do projeto 2.]
+                    </p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://placehold.co/600x400/142640/d4a76a?text=Projeto+3" alt="Projeto 3">
+                    <div class="project-links-overlay">
+                        <a href="[Link do GitHub do Projeto]" target="_blank" title="Código Fonte"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">[Nome do Projeto 3]</h3>
+                    <p class="project-desc">
+                        [Breve descrição do projeto 3. Ideal para mostrar diversidade nas suas habilidades.]
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Flask</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center hidden">
+            <a href="https://github.com/DevLucas05" target="_blank" class="btn btn-outline" style="margin-top: 3rem;"><i class="fab fa-github"></i> Ver mais no GitHub</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container section-header hidden">
+            <h2 class="section-title">Vamos Conversar?</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">Estou sempre aberto a novas oportunidades e desafios.</p>
+        </div>
+        <div class="container contact-content hidden">
+            <div class="contact-card glass-panel">
+                <i class="fas fa-paper-plane contact-icon"></i>
+                <h3>Entre em Contato</h3>
+                <p>Sinta-se à vontade para me enviar um e-mail. Responderei o mais rápido possível!</p>
+                <a href="mailto:lucasnascimento05.dev@gmail.com" class="btn btn-primary btn-block">Diga Olá <i class="fas fa-arrow-right" style="margin-left: 8px;"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-social">
+                <a href="https://github.com/DevLucas05" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/lucas-nascimento-dev" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; <span id="year"></span> Lucas Nascimento.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
