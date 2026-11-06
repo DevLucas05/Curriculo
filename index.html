@@ -8,217 +8,284 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Lucas Nascimento | Desenvolvedor com IA">
     <meta property="og:description" content="Back-end e machine learning. Estagiário de IA na MJV, construindo agentes com AWS Bedrock.">
-    <meta name="theme-color" content="#0e1a29">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%230e1a29'/><text x='32' y='42' font-family='monospace' font-size='28' font-weight='700' fill='%23d9b88a' text-anchor='middle'>LN</text></svg>">
+    <meta name="theme-color" content="#fbfaf6">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23f0508a' stroke='%231d1b19' stroke-width='3'/><text x='32' y='41' font-family='monospace' font-size='24' font-weight='700' fill='%23fff' text-anchor='middle'>LN</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&family=Silkscreen:wght@700&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add('js')</script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="topo">
-        <div class="topo-dentro">
-            <a href="#inicio" class="marca" aria-label="Lucas Nascimento, início"><span class="sigla" aria-hidden="true">LN</span><span class="marca-nome">Lucas Nascimento</span></a>
-            <nav aria-label="Seções">
-                <a href="#experiencia">Experiência</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#habilidades">Habilidades</a>
-                <a href="#contato">Contato</a>
-            </nav>
+<div class="folha">
+    <header class="barra">
+        <a href="#inicio" class="logo" aria-label="Lucas Nascimento, início">LN</a>
+        <nav class="menu" aria-label="Seções">
+            <span class="marcador" aria-hidden="true"></span>
+            <a href="#inicio"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5l1.9 4.1 4.4.5-3.3 3 .9 4.4L8 11.3l-3.9 2.2.9-4.4-3.3-3 4.4-.5z"/></svg>Início</a>
+            <a href="#sobre"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="5" r="3"/><path d="M2.5 14.5c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5z"/></svg>Sobre</a>
+            <a href="#projetos"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="2" width="5" height="5"/><rect x="9" y="2" width="5" height="5"/><rect x="2" y="9" width="5" height="5"/><rect x="9" y="9" width="5" height="5"/></svg>Projetos</a>
+            <a href="#experiencia"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5L14.5 8 8 14.5 1.5 8z"/></svg>Experiência</a>
+        </nav>
+        <div class="barra-acoes">
+            <a class="bolinha c-amarelo" href="https://www.linkedin.com/in/lucas-nascimento-dev" target="_blank" rel="noopener" aria-label="LinkedIn"><span aria-hidden="true">in</span></a>
+            <a class="bolinha c-rosa" href="https://github.com/DevLucas05" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+            <a class="bolinha c-verde" href="mailto:lucasnascimento05.dev@gmail.com" aria-label="E-mail"><svg viewBox="0 0 16 16" aria-hidden="true" class="traco"><rect x="1.5" y="3.5" width="13" height="9" rx="1"/><path d="M2 4.5l6 4.5 6-4.5"/></svg></a>
+            <a class="botao-contato" href="#contato"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14s-6-3.7-6-8a3.2 3.2 0 0 1 6-1.6A3.2 3.2 0 0 1 14 6c0 4.3-6 8-6 8z"/></svg>Contato</a>
         </div>
     </header>
 
     <main>
         <section class="hero" id="inicio">
-            <canvas class="campo" aria-hidden="true"></canvas>
-            <div class="hero-texto">
-                <p class="rotulo"><span class="status"><i aria-hidden="true"></i>Disponível para vagas</span>Rio de Janeiro · Estagiário de IA na MJV</p>
-                <h1>Lucas Nascimento</h1>
-                <p class="cargo">Desenvolvedor com IA, back-end e machine learning</p>
-                <p class="agora">
-                    <span class="sr-only">Trabalhando com agentes no AWS Bedrock, RAG e LLMs, Flutter offline-first, Go e análise estática.</span>
-                    <span aria-hidden="true">trabalhando com <span class="giro">agentes no AWS Bedrock</span></span>
-                </p>
-                <p class="bio">
-                    Construo agentes de IA com AWS Bedrock no estágio da MJV e termino Ciência da Computação na FMU em dezembro de 2026.
-                    Trabalho principalmente com Python e TypeScript: APIs assíncronas, pipelines RAG e aplicações com testes automatizados.
-                </p>
-                <div class="acoes">
-                    <a href="#projetos" class="botao botao-principal">Ver projetos</a>
-                    <a href="assets/Curriculo-Lucas-Nascimento.pdf" class="botao" download>Baixar currículo (PDF)</a>
-                </div>
-                <p class="links">
-                    <a href="https://github.com/DevLucas05" target="_blank" rel="noopener">GitHub</a>
-                    <a href="https://www.linkedin.com/in/lucas-nascimento-dev" target="_blank" rel="noopener">LinkedIn</a>
-                    <a href="mailto:lucasnascimento05.dev@gmail.com">E-mail</a>
-                </p>
+            <p class="rabisco meu-nome">meu nome é<svg viewBox="0 0 90 10" aria-hidden="true"><path d="M2 6c8-5 12 4 20 0s12-5 20 0 12 4 20 0 12-5 26-1"/></svg></p>
+
+            <div class="nome-area">
+                <span class="etiqueta etq-1 c-verde" data-arrastar>Back-end &amp; ML</span>
+                <span class="etiqueta etq-2 c-amarelo" data-arrastar>Agentes de IA</span>
+                <h1 class="nome">
+                    <span class="sr-only">Lucas Nascimento</span>
+                    <span class="pixel" aria-hidden="true"><span>L</span><span>U</span><span>C</span><span>A</span><span>S</span></span>
+                    <svg class="caixa" viewBox="0 0 350 100" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M7 9C92 4 250 8 343 6c3 32 0 62 2 88-106 4-232 1-339 2-3-30 1-60-2-91 4-1 9-1 14 0"/></svg>
+                </h1>
+                <span class="nota nota-1 c-amarelo" data-arrastar>Dev com IA<svg viewBox="0 0 26 22" aria-hidden="true"><path d="M3 19c6-2 12-7 18-15M14 4h7l-1 7"/></svg></span>
+                <span class="nota nota-2 c-verde" data-arrastar>Rio de Janeiro<svg viewBox="0 0 26 22" aria-hidden="true"><path d="M3 19c6-2 12-7 18-15M14 4h7l-1 7"/></svg></span>
             </div>
-            <div class="foto-moldura">
-                <img class="foto" src="assets/perfil.jpeg" alt="Foto de Lucas Nascimento" width="970" height="1280">
+
+            <p class="status"><i aria-hidden="true"></i>Disponível para vagas · Estagiário de IA na MJV</p>
+
+            <div class="avatar" data-arrastar aria-hidden="true"></div>
+            <div class="selo" data-arrastar aria-hidden="true">
+                <svg viewBox="0 0 100 100">
+                    <defs><path id="volta" d="M50 50m-37 0a37 37 0 1 1 74 0a37 37 0 1 1-74 0"/></defs>
+                    <circle cx="50" cy="50" r="48" class="selo-fundo"/>
+                    <text><textPath href="#volta">DESENVOLVEDOR COM IA • RIO DE JANEIRO • </textPath></text>
+                </svg>
+                <span>LN</span>
+            </div>
+
+            <p class="frase">Construo IA que sai da demo
+                <svg class="doodle alvo" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#22a565" stroke="#1d1b19" stroke-width="1.5"/><circle cx="12" cy="12" r="6" fill="none" stroke="#fff" stroke-width="2.4"/><circle cx="12" cy="12" r="2.2" fill="#fff"/></svg>
+                e vai para produção.
+                <svg class="doodle flor" viewBox="0 0 24 24" aria-hidden="true"><g fill="#f0508a" stroke="#1d1b19" stroke-width="1"><circle cx="12" cy="5" r="4"/><circle cx="18.1" cy="8.5" r="4"/><circle cx="18.1" cy="15.5" r="4"/><circle cx="12" cy="19" r="4"/><circle cx="5.9" cy="15.5" r="4"/><circle cx="5.9" cy="8.5" r="4"/></g><circle cx="12" cy="12" r="3.6" fill="#f4c542" stroke="#1d1b19" stroke-width="1"/></svg>
+            </p>
+
+            <div class="acoes">
+                <a href="#contato" class="botao botao-preto"><span class="quadrado" aria-hidden="true">↗</span>Fale comigo</a>
+                <a href="assets/Curriculo-Lucas-Nascimento.pdf" class="botao botao-claro" download>Currículo (PDF) ↓</a>
             </div>
         </section>
 
-        <section id="experiencia" class="secao">
-            <h2><span class="indice" aria-hidden="true">01</span>Experiência</h2>
+        <div class="horizonte" aria-hidden="true"><svg viewBox="0 0 1000 60" preserveAspectRatio="none"><path d="M0 58C260 4 740 4 1000 58"/></svg></div>
 
-            <div class="linha-tempo">
-                <article class="item">
-                    <p class="data">Jul/2026 — atual</p>
-                    <div>
-                        <h3>Estagiário de IA</h3>
-                        <p class="onde">MJV Technology &amp; Innovation · Rio de Janeiro, híbrido</p>
-                        <ul>
-                            <li>Agentes de IA que automatizam operações internas e fluxos voltados ao cliente, integrados a microsserviços na AWS e a foundation models via AWS Bedrock.</li>
-                            <li>Camada de orquestração em TypeScript sobre Bun, painel de operação em React 19 com 13 telas, dados no AWS RDS e deploy pelo AWS CodePipeline.</li>
-                            <li>Migração de um sistema interno de um protótipo no-code para React, Express/TypeScript e MySQL.</li>
-                            <li>Agent Skills reutilizáveis para padronizar como os estagiários desenvolvem com Claude Code, Codex e OpenCode.</li>
-                        </ul>
-                        <p class="stack">TypeScript · Bun · React 19 · Express · MySQL · AWS Bedrock · AWS RDS · AWS CodePipeline</p>
+        <section class="secao sobre" id="sobre">
+            <div class="cabeca revelar">
+                <p class="rabisco">sobre mim!</p>
+                <h2 class="caixa-titulo">e aí?</h2>
+            </div>
+
+            <div class="sobre-grade">
+                <figure class="polaroid fita pol-esq" data-arrastar>
+                    <img src="assets/perfil.jpeg" alt="Foto de Lucas Nascimento" width="970" height="1280" draggable="false">
+                    <figcaption>eu, 2026</figcaption>
+                </figure>
+
+                <p class="manuscrito revelar">
+                    Sou o Lucas. Construo agentes de IA com AWS Bedrock no estágio da MJV e termino Ciência da Computação na FMU em dezembro.
+                    Nas horas vagas, crio meus próprios produtos: um app de produtividade para quem tem TDAH, um gerador de estudos bíblicos com IA e uma ferramenta de qualidade de código em Go.
+                    Gosto de back-end com teste, de RAG bem amarrado e de app que funciona até sem internet.
+                </p>
+
+                <figure class="polaroid fita pol-dir" data-arrastar>
+                    <img src="assets/foco-pomodoro.jpg" alt="Tela de Pomodoro do app Foco" width="400" height="500" draggable="false">
+                    <figcaption>o Foco rodando</figcaption>
+                </figure>
+
+                <ul class="tags revelar" aria-label="O que eu mais faço">
+                    <li class="tag c-amarelo">Agentes de IA</li>
+                    <li class="tag-icone c-amarelo" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="8" width="14" height="11" rx="2"/><path d="M12 8V4M9 13h.01M15 13h.01M9.5 16h5"/><circle cx="12" cy="3.5" r="1"/></svg></li>
+                    <li class="tag c-verde">RAG</li>
+                    <li class="tag-icone c-verde" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5.5C7 4 9.5 4.5 12 6c2.5-1.5 5-2 8-.5v13c-3-1.5-5.5-1-8 .5-2.5-1.5-5-2-8-.5z"/><path d="M12 6v13"/></svg></li>
+                    <li class="tag c-rosa">Back-end</li>
+                    <li class="tag-icone c-rosa" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="6" rx="1"/><rect x="4" y="14" width="16" height="6" rx="1"/><path d="M8 7h.01M8 17h.01"/></svg></li>
+                    <li class="tag c-azul">Machine Learning</li>
+                    <li class="tag-icone c-azul" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16M7 16v-4M12 16V7M17 16v-7"/></svg></li>
+                </ul>
+            </div>
+            <p class="dica rabisco" aria-hidden="true">psiu: as fotos e os adesivos dão pra arrastar</p>
+        </section>
+
+        <section class="secao projetos" id="projetos">
+            <div class="cabeca revelar">
+                <p class="rabisco">coisas que eu construí</p>
+                <h2 class="caixa-titulo">Projetos</h2>
+            </div>
+
+            <div class="pastas">
+                <article class="pasta c-azul" style="--i: 0">
+                    <p class="aba"><span aria-hidden="true">◆</span> Projeto 01</p>
+                    <div class="pasta-texto">
+                        <p class="data"><i aria-hidden="true"></i>Mai 2026 — atual · repositório privado</p>
+                        <h3>Foco</h3>
+                        <p class="resumo">App Android de produtividade para pessoas com TDAH.</p>
+                        <p class="detalhe">
+                            Offline-first e em português, com tarefas em lista e Kanban, Pomodoro, plano diário e widgets na tela inicial.
+                            O SQLite do aparelho é a fonte da verdade e a sincronização não trava a interface.
+                            O backend tem JWT com rotação de refresh token, Google Agenda e exportação e exclusão de dados (LGPD).
+                            O CI roda mais de 500 testes automatizados.
+                        </p>
+                        <p class="stack">Flutter · Dart · Riverpod · Kotlin · FastAPI · PostgreSQL · Alembic</p>
                     </div>
+                    <figure class="midia midia-celular fita">
+                        <video src="assets/foco.mp4" poster="assets/foco-poster.jpg" width="540" height="960"
+                            muted loop playsinline controls preload="metadata"
+                            aria-label="Vídeo sem som do Foco mostrando as telas de tarefas, Kanban, Meu dia, Pomodoro e o widget da tela inicial"></video>
+                    </figure>
                 </article>
 
-                <article class="item">
-                    <p class="data">Jul/2025 — Set/2025</p>
-                    <div>
-                        <h3>Engenheiro de software freelancer</h3>
-                        <p class="onde">SaaS de agendamentos · Remoto</p>
-                        <ul>
-                            <li>Arquitetei e desenvolvi do zero um SaaS de gestão de agendamentos, com vários usuários e fluxos de negócio.</li>
-                            <li>API REST assíncrona em Python e FastAPI, com autenticação, notificações e PostgreSQL.</li>
-                            <li>Pipelines de dados que analisam os padrões de uso da plataforma e servem de base para modelos de previsão de demanda.</li>
-                            <li>Aplicação em Docker, com deploy em servidor Linux.</li>
-                        </ul>
-                        <p class="stack">Python · FastAPI · PostgreSQL · Docker</p>
+                <article class="pasta c-preto" style="--i: 1">
+                    <p class="aba"><span aria-hidden="true">◆</span> Projeto 02</p>
+                    <div class="pasta-texto">
+                        <p class="data"><i aria-hidden="true"></i>Mar 2026 — Jun 2026</p>
+                        <h3>Scriptura AI</h3>
+                        <p class="resumo">Micro-SaaS que gera estudos bíblicos personalizados com LLMs.</p>
+                        <p class="detalhe">
+                            Usa RAG sobre a Bíblia NVI, com ChromaDB e Sentence-Transformers.
+                            Adapta a linguagem à faixa etária do público, entrega o estudo em 9 seções fixas e alterna entre Ollama (local) e Groq (nuvem) sem mudar código.
+                        </p>
+                        <p class="stack">Python · FastAPI · ChromaDB · Ollama · Groq · React 19 · Tailwind CSS 4</p>
+                        <a class="ver" href="https://github.com/DevLucas05/scriptura-ai-public" target="_blank" rel="noopener">Ver no GitHub ↗</a>
                     </div>
+                    <figure class="midia fita">
+                        <video src="assets/scriptura.mp4" poster="assets/scriptura-poster.jpg" width="960" height="600"
+                            muted loop playsinline controls preload="metadata"
+                            aria-label="Vídeo sem som do Scriptura AI: o tema Perdão é digitado, o público Jovens é escolhido e o estudo gerado aparece com texto base, introdução e desenvolvimento"></video>
+                    </figure>
+                </article>
+
+                <article class="pasta c-amarelo" style="--i: 2">
+                    <p class="aba"><span aria-hidden="true">◆</span> Projeto 03</p>
+                    <div class="pasta-texto">
+                        <p class="data"><i aria-hidden="true"></i>Repositório privado</p>
+                        <h3>Farol</h3>
+                        <p class="resumo">Qualidade e segurança de código num único executável em Go.</p>
+                        <p class="detalhe">
+                            Faz análise estática em várias linguagens, detecção de segredos, análise de dependências e quality gates.
+                            Tem servidor com interface web embutida, integra com editores (LSP) e agentes de IA (MCP) e inclui varredura de vulnerabilidades de rede com plugins assinados.
+                        </p>
+                        <p class="stack">Go · SQLite · LSP · MCP</p>
+                    </div>
+                    <figure class="midia fita">
+                        <video src="assets/farol.mp4" poster="assets/farol-poster.jpg" width="960" height="600"
+                            muted loop playsinline controls preload="metadata"
+                            aria-label="Vídeo sem som da interface do Farol com projetos de exemplo: lista de projetos, visão geral com quality gate reprovado, lista de issues, detalhe de uma credencial fixa no código e a aba Segurança com o OWASP Top 10"></video>
+                    </figure>
+                </article>
+            </div>
+
+            <p class="mais"><a href="https://github.com/DevLucas05" target="_blank" rel="noopener">Mais no meu GitHub ↗</a></p>
+        </section>
+
+        <section class="secao experiencia" id="experiencia">
+            <div class="cabeca revelar">
+                <p class="rabisco">onde já trabalhei</p>
+                <h2 class="caixa-titulo">Experiência</h2>
+            </div>
+
+            <div class="fichas">
+                <article class="ficha revelar">
+                    <p class="data">Jul 2026 — atual</p>
+                    <h3>Estagiário de IA</h3>
+                    <p class="onde">MJV Technology &amp; Innovation · Rio de Janeiro, híbrido</p>
+                    <ul>
+                        <li>Agentes de IA que automatizam operações internas e fluxos voltados ao cliente, integrados a microsserviços na AWS e a foundation models via AWS Bedrock.</li>
+                        <li>Camada de orquestração em TypeScript sobre Bun, painel de operação em React 19 com 13 telas, dados no AWS RDS e deploy pelo AWS CodePipeline.</li>
+                        <li>Migração de um sistema interno de um protótipo no-code para React, Express/TypeScript e MySQL.</li>
+                        <li>Agent Skills reutilizáveis para padronizar como os estagiários desenvolvem com Claude Code, Codex e OpenCode.</li>
+                    </ul>
+                    <p class="stack">TypeScript · Bun · React 19 · Express · MySQL · AWS Bedrock · AWS RDS · AWS CodePipeline</p>
+                </article>
+
+                <article class="ficha revelar">
+                    <p class="data">Jul 2025 — Set 2025</p>
+                    <h3>Engenheiro de software freelancer</h3>
+                    <p class="onde">SaaS de agendamentos · Remoto</p>
+                    <ul>
+                        <li>Arquitetei e desenvolvi do zero um SaaS de gestão de agendamentos, com vários usuários e fluxos de negócio.</li>
+                        <li>API REST assíncrona em Python e FastAPI, com autenticação, notificações e PostgreSQL.</li>
+                        <li>Pipelines de dados que analisam os padrões de uso da plataforma e servem de base para modelos de previsão de demanda.</li>
+                        <li>Aplicação em Docker, com deploy em servidor Linux.</li>
+                    </ul>
+                    <p class="stack">Python · FastAPI · PostgreSQL · Docker</p>
                 </article>
             </div>
         </section>
 
-        <section id="projetos" class="secao">
-            <h2><span class="indice" aria-hidden="true">02</span>Projetos</h2>
+        <section class="secao habilidades" id="habilidades">
+            <div class="cabeca revelar">
+                <p class="rabisco">minha caixa de ferramentas</p>
+                <h2 class="caixa-titulo">Habilidades</h2>
+            </div>
 
-            <article class="projeto">
-                <div class="projeto-texto">
-                    <p class="data">Mai/2026 — atual · repositório privado</p>
-                    <h3>Foco</h3>
-                    <p class="resumo">App Android de produtividade para pessoas com TDAH.</p>
-                    <p>
-                        Offline-first e em português, com tarefas em lista e Kanban, Pomodoro, plano diário e widgets na tela inicial.
-                        O SQLite do aparelho é a fonte da verdade e a sincronização não trava a interface.
-                        O backend tem autenticação JWT com rotação de refresh token, integração com Google Agenda e exportação e exclusão de dados (LGPD).
-                        O CI no GitHub Actions roda mais de 500 testes automatizados.
-                    </p>
-                    <p class="stack">Flutter · Dart · Riverpod · Kotlin · FastAPI · PostgreSQL · Alembic</p>
-                </div>
-                <figure class="tela tela-celular">
-                    <video src="assets/foco.mp4" poster="assets/foco-poster.jpg" width="540" height="960"
-                        muted loop playsinline controls preload="metadata"
-                        aria-label="Vídeo sem som do Foco mostrando as telas de tarefas, Kanban, Meu dia, Pomodoro e o widget da tela inicial"></video>
-                </figure>
-            </article>
-
-            <article class="projeto">
-                <div class="projeto-texto">
-                    <p class="data">Mar/2026 — Jun/2026</p>
-                    <h3>Scriptura AI</h3>
-                    <p class="resumo">Micro-SaaS que gera estudos bíblicos personalizados com LLMs.</p>
-                    <p>
-                        Usa RAG sobre a Bíblia NVI, com ChromaDB e Sentence-Transformers.
-                        Adapta a linguagem à faixa etária do público, entrega o estudo em 9 seções fixas e alterna entre Ollama (local) e Groq (nuvem) sem mudar código.
-                    </p>
-                    <p class="stack">Python · FastAPI · ChromaDB · Ollama · Groq · React 19 · Tailwind CSS 4</p>
-                    <p><a class="seta" href="https://github.com/DevLucas05/scriptura-ai-public" target="_blank" rel="noopener">Página do projeto no GitHub</a></p>
-                </div>
-                <figure class="tela">
-                    <div class="janela-barra" aria-hidden="true"><i></i><i></i><i></i><span>Scriptura AI — Gerar conteúdo</span></div>
-                    <video src="assets/scriptura.mp4" poster="assets/scriptura-poster.jpg" width="960" height="600"
-                        muted loop playsinline controls preload="metadata"
-                        aria-label="Vídeo sem som do Scriptura AI: o tema Perdão é digitado, o público Jovens é escolhido e o estudo gerado aparece com texto base, introdução e desenvolvimento"></video>
-                </figure>
-            </article>
-
-            <article class="projeto">
-                <div class="projeto-texto">
-                    <p class="data">Repositório privado</p>
-                    <h3>Farol</h3>
-                    <p class="resumo">Qualidade e segurança de código num único executável em Go.</p>
-                    <p>
-                        Faz análise estática em várias linguagens, detecção de segredos, análise de dependências e quality gates.
-                        Tem servidor com interface web embutida e se integra a editores (LSP) e a agentes de IA (MCP).
-                        Também inclui um módulo de varredura de vulnerabilidades de rede com plugins assinados.
-                    </p>
-                    <p class="stack">Go · SQLite · LSP · MCP</p>
-                </div>
-                <figure class="tela">
-                    <div class="janela-barra" aria-hidden="true"><i></i><i></i><i></i><span>Farol — projetos de exemplo</span></div>
-                    <video src="assets/farol.mp4" poster="assets/farol-poster.jpg" width="960" height="600"
-                        muted loop playsinline controls preload="metadata"
-                        aria-label="Vídeo sem som da interface do Farol com projetos de exemplo: lista de projetos, visão geral com quality gate reprovado, lista de issues, detalhe de uma credencial fixa no código e a aba Segurança com o OWASP Top 10"></video>
-                </figure>
-            </article>
-
-            <p class="mais"><a class="seta" href="https://github.com/DevLucas05" target="_blank" rel="noopener">Mais no meu GitHub</a></p>
-        </section>
-
-        <section id="habilidades" class="secao">
-            <h2><span class="indice" aria-hidden="true">03</span>Habilidades</h2>
-            <dl class="habilidades">
-                <div><dt>Linguagens</dt><dd>Python, TypeScript, JavaScript, Dart, Kotlin, Go</dd></div>
-                <div><dt>Back-end</dt><dd>FastAPI, Express, Bun, Node.js, Pydantic, APIs REST assíncronas</dd></div>
-                <div><dt>IA e LLMs</dt><dd>Agentes de IA, orquestração agêntica, RAG, AWS Bedrock, prompt engineering, ChromaDB, Sentence-Transformers, Ollama, Groq</dd></div>
-                <div><dt>Machine learning e dados</dt><dd>Scikit-Learn, PyTorch, Pandas, NumPy</dd></div>
-                <div><dt>Bancos de dados</dt><dd>PostgreSQL, MySQL, SQLite, AWS RDS</dd></div>
-                <div><dt>Mobile e front-end</dt><dd>Flutter, Riverpod, React, Tailwind CSS</dd></div>
-                <div><dt>Infraestrutura</dt><dd>AWS (Bedrock, RDS, CodePipeline, Secrets Manager), Docker, GitHub Actions, Linux, Git</dd></div>
-                <div><dt>Desenvolvimento com IA</dt><dd>Claude Code, Codex, OpenCode</dd></div>
+            <dl class="ferramentas">
+                <div class="grupo c-amarelo revelar"><dt>linguagens</dt><dd>Python</dd><dd>TypeScript</dd><dd>JavaScript</dd><dd>Dart</dd><dd>Kotlin</dd><dd>Go</dd></div>
+                <div class="grupo c-rosa revelar"><dt>back-end</dt><dd>FastAPI</dd><dd>Express</dd><dd>Bun</dd><dd>Node.js</dd><dd>Pydantic</dd><dd>APIs REST assíncronas</dd></div>
+                <div class="grupo c-verde revelar"><dt>IA e LLMs</dt><dd>Agentes de IA</dd><dd>Orquestração agêntica</dd><dd>RAG</dd><dd>AWS Bedrock</dd><dd>Prompt engineering</dd><dd>ChromaDB</dd><dd>Sentence-Transformers</dd><dd>Ollama</dd><dd>Groq</dd></div>
+                <div class="grupo c-azul revelar"><dt>machine learning e dados</dt><dd>Scikit-Learn</dd><dd>PyTorch</dd><dd>Pandas</dd><dd>NumPy</dd></div>
+                <div class="grupo c-verde revelar"><dt>bancos de dados</dt><dd>PostgreSQL</dd><dd>MySQL</dd><dd>SQLite</dd><dd>AWS RDS</dd></div>
+                <div class="grupo c-amarelo revelar"><dt>mobile e front-end</dt><dd>Flutter</dd><dd>Riverpod</dd><dd>React</dd><dd>Tailwind CSS</dd></div>
+                <div class="grupo c-azul revelar"><dt>infraestrutura</dt><dd>AWS (Bedrock, RDS, CodePipeline, Secrets Manager)</dd><dd>Docker</dd><dd>GitHub Actions</dd><dd>Linux</dd><dd>Git</dd></div>
+                <div class="grupo c-rosa revelar"><dt>desenvolvimento com IA</dt><dd>Claude Code</dd><dd>Codex</dd><dd>OpenCode</dd></div>
             </dl>
         </section>
 
-        <section id="formacao" class="secao">
-            <h2><span class="indice" aria-hidden="true">04</span>Formação</h2>
+        <section class="secao formacao" id="formacao">
+            <div class="cabeca revelar">
+                <p class="rabisco">o que eu estudei</p>
+                <h2 class="caixa-titulo">Formação</h2>
+            </div>
 
-            <article class="item">
-                <p class="data">Fev/2023 — Dez/2026</p>
-                <div>
-                    <h3>Bacharelado em Ciência da Computação</h3>
+            <div class="bilhetes">
+                <article class="bilhete c-verde revelar">
+                    <p class="data">Fev 2023 — Dez 2026</p>
+                    <h3>Ciência da Computação</h3>
                     <p class="onde">FMU, Faculdades Metropolitanas Unidas</p>
                     <p>Entre os 10% melhores alunos da turma em coeficiente de rendimento em 2023 e 2024. Participei de projetos acadêmicos para ajudar pessoas de baixa renda da minha comunidade a encontrar trabalho e serviços.</p>
-                </div>
-            </article>
-
-            <article class="item">
-                <p class="data">Concluída</p>
-                <div>
+                </article>
+                <article class="bilhete c-amarelo revelar">
+                    <p class="data">Concluída</p>
                     <h3>Trilha Especialista em IA</h3>
                     <p class="onde">Alura</p>
-                </div>
-            </article>
-
-            <article class="item">
-                <p class="data">Idiomas</p>
-                <div>
-                    <p>Inglês avançado, com leitura técnica fluente e escrita profissional. Espanhol intermediário.</p>
-                </div>
-            </article>
+                </article>
+                <article class="bilhete c-rosa revelar">
+                    <p class="data">Idiomas</p>
+                    <h3>Inglês avançado</h3>
+                    <p>Leitura técnica fluente e escrita profissional. Espanhol intermediário.</p>
+                </article>
+            </div>
         </section>
 
-        <section id="contato" class="secao contato">
-            <h2><span class="indice" aria-hidden="true">05</span>Contato</h2>
-            <p>Busco uma vaga de Desenvolvedor com IA. Respondo mais rápido por e-mail.</p>
-            <p class="email-linha">
+        <section class="secao contato" id="contato">
+            <div class="cabeca revelar">
+                <p class="rabisco">bora conversar?</p>
+                <h2 class="caixa-titulo">Contato</h2>
+            </div>
+            <p class="intro">Busco uma vaga de Desenvolvedor com IA. Respondo mais rápido por e-mail.</p>
+            <p class="email-linha revelar">
                 <a class="email" href="mailto:lucasnascimento05.dev@gmail.com">lucasnascimento05.dev@gmail.com</a>
-                <button class="copiar" type="button" hidden>Copiar e-mail</button>
+                <button class="copiar" type="button" hidden>Copiar</button>
             </p>
             <p class="links">
-                <a href="https://www.linkedin.com/in/lucas-nascimento-dev" target="_blank" rel="noopener">LinkedIn</a>
-                <a href="https://github.com/DevLucas05" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/lucas-nascimento-dev" target="_blank" rel="noopener">LinkedIn ↗</a>
+                <a href="https://github.com/DevLucas05" target="_blank" rel="noopener">GitHub ↗</a>
+                <a href="assets/Curriculo-Lucas-Nascimento.pdf" download>Currículo (PDF) ↓</a>
             </p>
         </section>
     </main>
 
     <footer class="rodape">
-        <p>© <span id="ano">2026</span> Lucas Nascimento</p>
+        <p>© <span id="ano">2026</span> Lucas Nascimento · Rio de Janeiro</p>
     </footer>
+</div>
 </body>
 </html>
